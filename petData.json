@@ -1,0 +1,14 @@
+{
+  "pets": [
+    {
+      "id": 1,
+      "name": "Truffle2",
+      "type": "Dwarf Hamster"
+    },
+    {
+      "name": "Chinchilla",
+      "type": "Ham-dogs",
+      "id": 2
+    }
+  ]
+}

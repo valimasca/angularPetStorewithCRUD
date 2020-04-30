@@ -1,0 +1,46 @@
+1. creating the mock data json
+2. creating the ng generate class pet - it will generate pets.ts 
+3. creating the service pet-data. Will generate pet-data.service.ts (ng generate service pet-data)
+4. in app.module.ts import HttpClientModule
+5. in pet-data.service.ts import httpClient, and httpheaders and inject it in the constructor
+6. bring in the observable and Pet in pet-data.serice.ts and create a funciton getPets()
+7. generate a new component - ng generate component pet-list
+8. in pet-list.component.ts import Pet model and Pet-data and set it to the service and create the function getPets
+9. in pet-list.component.html render the page
+10. Create a new component to be able to add a pet (ng generate component pet-add) and go in the html of it and create the form
+11. go in to app-rounting to add the routes
+12. App.component.html add the router-outlet.
+13. Generate a new component called nav, for the navigation and add the app-nav to the app.componenent.html
+14. nav.component.html and work on the html
+15. Pet-add.component.ts create a new Pet inside the new pet-add
+16. turn on  2 way data binding, so in app.module.ts import FormsModule from angular/FormsModule
+17. Back in pet-add.componenent.html bind the data with ngModule
+18. in pet-data.service.ts add the function that will add the pet
+19. Back in pet-add.componenent.ts bring the petDataService inside the addPet.
+20. Try to add few animals! it works!!!
+21. in pet-list.component.html add some the type of the pet
+22. Deleting pets: 
+a. in pet-list.component.html add a button with a click function that targets the id.
+b. pet-data.service. add a new function deletePet.
+c. pet-list.component.ts connect the service to the data with deletePet function.
+23. Press the x button on your local host and it should delete the animal
+24. Edit a pet: we need to add 2 methods in to the service. (getPet)
+25. Create a new componnent named pet-Edit
+26. In app routing add the new path for the edit
+27. Go in to pet-edit.component.ts and inject 3 things in the constructor
+28. Go in to pet-edit.component.html and add the code for the html 
+29. pet.data.service add editPet method
+30. pet-edit.components.ts add the petEdit method
+
+
+SUMMARY - ORDER OF THINGS:
+1 CREATED A MOCK DATABASE
+2 CREATED A PET model
+3 CREATED A PET-DATA SERVICE - this is responsible to talk to the backend json server and has many methods(functions) to access that data.
+4 Using the router to navigate through the components
+5 THE APP MODULE HAD ADDED HttpClientModule AND FormsModule
+6 ADDED 4 components
+a. nav component to navigate between links
+b. pet-list component calls the service and on ngOnInit it tells to get the list of pets
+c. pet-add component initializes a new pet it pulls in the constructor and a router.
+d. pet-edit component callsthe service, router and use the activated route. build the ngOnInit
