@@ -18,6 +18,11 @@ export class PetDataService {
     return this.http.get<Pet>(this.url + "/" + id);
   }
 
+  //Obserivables in Angular
+  //Angular makes use of observables as an interface to handle a variety of common asynchronous operations.
+  // ... The HTTP module uses observables to handle AJAX requests and responses.
+  // The Router and Forms modules use observables to listen for and respond to user-input events.
+
   addPet(pet: Pet) : Observable<Pet> {
     return this.http.post<Pet>(this.url, pet);
   }

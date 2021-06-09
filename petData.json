@@ -9,6 +9,21 @@
       "name": "Chinchilla",
       "type": "Ham-dogs",
       "id": 2
+    },
+    {
+      "name": "Hot Dog",
+      "type": "Corn Little Dog",
+      "id": 3
+    },
+    {
+      "name": "Jolly",
+      "type": "Mamooth",
+      "id": 4
+    },
+    {
+      "name": "Chiuwawa",
+      "type": "Bad dog",
+      "id": 5
     }
   ]
 }
